@@ -1,0 +1,33 @@
+body {
+  background: #0b1220;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ff6b81;
+  font-size: 48px;
+  animation: pulse 1s infinite;
+}
+
+.heart {
+  color: #ff6b81;
+  font-size: 60px;
+  animation: beat 1s infinite;
+  margin-top: 10px;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
